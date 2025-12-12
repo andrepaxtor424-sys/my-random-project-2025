@@ -1,0 +1,26 @@
+# 1. Создание и переход в новую локальную директорию
+mkdir my-random-project-2025
+cd my-random-project-2025
+
+# 2. Инициализация Git в этой директории
+git init
+
+# 3. Создание простого "рандомного" файла
+echo "Initial commit with some random data." > random_file.txt
+echo "# My Random Project 2025" > README.md
+
+# 4. Добавление всех новых файлов для коммита
+git add .
+
+# 5. Создание первого коммита
+git commit -m "Initial commit: setting up project structure and random data"
+
+# 6. Установка имени основной ветки (стандартная практика)
+git branch -M main
+
+# 7. Привязка локального репозитория к удаленному (GitHub)
+# !!! ОБЯЗАТЕЛЬНО ЗАМЕНИТЕ <ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ> на ваш никнейм на GitHub !!!
+git remote add origin https://github.com/<ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ>/my-random-project-2025.git
+
+# 8. Отправка (Push) локальных изменений на GitHub
+git push -u origin main
